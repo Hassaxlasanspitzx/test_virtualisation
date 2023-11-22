@@ -16,8 +16,6 @@ IP_PREFIX="10.200.200"
 IP_CIDR="24"
 
 function create {
-    log "create bridge with name br0"
-    ip link add br0 type bridge
 
     log "fire up br0"
     ip link set dev br0 up
